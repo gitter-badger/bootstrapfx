@@ -1,0 +1,457 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.text.TextFlow?>
+
+<ScrollPane stylesheets="@../../../../lib/src/main/resources/assets/css/bootstrapfx.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1">
+    <VBox prefWidth="698.0">
+        <Label styleClass="h1" text="Global Settings" />
+        <Separator prefWidth="200.0" />
+        <Label text="BootstrapFX sets basic global headings, display and typography styles. When more control is needed, checkout the textual utility classes." />
+        <VBox styleClass="blockquote">
+            <Label>
+                <graphic>
+                    <TextFlow>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="BootstrapFX uses the windows native font stack that selects the font-family as " />
+                        <Label styleClass="text-bold" text="Segoi UI." />
+                    </TextFlow>
+                </graphic>
+            </Label>
+            <Label>
+                <graphic>
+                    <TextFlow>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="For a more inclusive and accessible type scale, we assume the scene default root font-size as " />
+                        <Label styleClass="text-bold" text="1.083333em" />
+                        <Text layoutX="10.0" layoutY="10.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" (13px)" />
+                    </TextFlow>
+                </graphic>
+            </Label>
+        </VBox>
+        <Label text="Headings"> <styleClass> <String fx:value="heading" /> <String fx:value="h1" /> </styleClass> </Label>
+        <Separator prefWidth="200.0" />
+        <Label>
+            <graphic>
+                <TextFlow>
+                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="BootstrapFX implements HTML headings, &lt;h1&gt; through &lt;h6&gt;, as " />
+                    <Label styleClass="code" text=".h1" />
+                    <Text layoutX="10.0" layoutY="15.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" through to " />
+                    <Label layoutX="34.0" layoutY="15.0" styleClass="code" text=".h6" />
+                    <Text layoutX="408.0" layoutY="15.0" strokeType="OUTSIDE" strokeWidth="0.0" text=", for when you want to match the font styling of a heading but cannot use the associated HTML element." />
+                </TextFlow>
+            </graphic>
+        </Label>
+        <Label styleClass="display-3" text="Examples" />
+        <Label styleClass="h1" text=".h1 BootstrapFX Heading"> <VBox.margin> <Insets left="20.0" /> </VBox.margin> </Label>
+        <Label styleClass="h2" text=".h2 BootstrapFX Heading"> <VBox.margin> <Insets left="20.0" /> </VBox.margin> </Label>
+        <Label styleClass="h3" text=".h3 BootstrapFX Heading"> <VBox.margin> <Insets left="20.0" /> </VBox.margin> </Label>
+        <Label styleClass="h4" text=".h4 BootstrapFX Heading"> <VBox.margin> <Insets left="20.0" /> </VBox.margin> </Label>
+        <Label styleClass="h5" text=".h5 BootstrapFX Heading"> <VBox.margin> <Insets left="20.0" /> </VBox.margin> </Label>
+        <Label styleClass="h6" text=".h6 BootstrapFX Heading"> <VBox.margin> <Insets left="20.0" /> </VBox.margin> </Label>
+        <VBox styleClass="blockquote">
+            <Label>
+                <graphic>
+                    <TextFlow>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="For better visualization of headings,  add " />
+                        <Label layoutX="10.0" layoutY="15.0" styleClass="code" text=".heading" />
+                        <Text layoutX="10.0" layoutY="10.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" tag. This tag adds a top padding of 40px to a heading element separating it from any previous content." />
+                    </TextFlow>
+                </graphic>
+            </Label>
+        </VBox>
+        <Label layoutX="10.0" layoutY="442.0" text="Customizing headings"> <styleClass> <String fx:value="display-2" /> <String fx:value="display" /> </styleClass> </Label>
+        <Separator layoutX="10.0" layoutY="494.0" prefWidth="200.0" />
+        <Label>
+            <graphic>
+                <TextFlow>
+                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Use the included utility tag " />
+                    <Label styleClass="code" text=".small" />
+                    <Text layoutX="10.0" layoutY="15.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" from BootstrapFX to recreate the small secondary heading text." />
+                </TextFlow>
+            </graphic>
+        </Label>
+        <Label styleClass="display-3" text="Example" />
+        <Label>
+            <graphic>
+                <TextFlow>
+                    <Label styleClass="h1" text="Fancy display heading " />
+                    <Label layoutX="10.0" layoutY="15.0" styleClass="small" text="With a small secondary heading" />
+                </TextFlow>
+            </graphic>
+            <VBox.margin> <Insets left="20.0" /> </VBox.margin>
+        </Label>
+        <Label text="Display headings"> <styleClass> <String fx:value="display-2" /> <String fx:value="display" /> </styleClass> </Label>
+        <Separator prefWidth="200.0" />
+        <Label>
+            <graphic>
+                <TextFlow>
+                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="BootstrapFX implements display headings, as " />
+                    <Label styleClass="code" text=".display-1" />
+                    <Text layoutX="10.0" layoutY="15.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" through to " />
+                    <Label layoutX="34.0" layoutY="15.0" styleClass="code" text=".display-4" />
+                </TextFlow>
+            </graphic>
+        </Label>
+        <Label layoutX="10.0" layoutY="296.0" styleClass="display-3" text="Examples" />
+        <Label styleClass="display-1" text=".display-1 Display Heading"> <VBox.margin> <Insets left="20.0" /> </VBox.margin> </Label>
+        <Label styleClass="display-2" text=".display-2 Display Heading"> <VBox.margin> <Insets left="20.0" /> </VBox.margin> </Label>
+        <Label styleClass="display-3" text=".display-3 Display Heading"> <VBox.margin> <Insets left="20.0" /> </VBox.margin> </Label>
+        <Label styleClass="display-4" text=".display-4 Display Heading"> <VBox.margin> <Insets left="20.0" /> </VBox.margin> </Label>
+        <VBox layoutX="10.0" layoutY="2696.0" styleClass="blockquote">
+            <Label text="Traditional heading elements are designed to work best in the meat of your page content. When you need a heading to stand out, consider using a display heading - a larger, slightly more opinionated heading style." />
+            <Label>
+                <graphic>
+                    <TextFlow>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="For better visualization of display headings,  add " />
+                        <Label layoutX="10.0" layoutY="15.0" styleClass="code" text=".display" />
+                        <Text layoutX="10.0" layoutY="10.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" tag. This tag adds a top padding of 20px to a display heading element. " />
+                    </TextFlow>
+                </graphic>
+            </Label>
+        </VBox>
+        <Label text="Lead Text"> <styleClass> <String fx:value="heading" /> <String fx:value="h1" /> </styleClass> </Label>
+        <Separator prefWidth="200.0" />
+        <Label>
+            <graphic>
+                <TextFlow>
+                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Make a paragraph stand out by adding " />
+                    <Label styleClass="code" text=".lead" />
+                    <Text layoutX="10.0" layoutY="15.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" tag." />
+                </TextFlow>
+            </graphic>
+        </Label>
+        <Label styleClass="display-3" text="Lead Text Example" />
+        <Label styleClass="lead" text="Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus."> <VBox.margin> <Insets left="20.0" /> </VBox.margin> </Label>
+        <Label layoutX="10.0" layoutY="1071.0" styleClass="display-3" text="Normal Text Example" />
+        <Label layoutX="30.0" layoutY="1099.0" text="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis tenetur sit voluptatem molestias ad neque veritatis! "> <VBox.margin> <Insets left="20.0" /> </VBox.margin> </Label>
+        <Label text="Inline text elements"> <styleClass> <String fx:value="heading" /> <String fx:value="h1" /> </styleClass> </Label>
+        <Separator prefWidth="200.0" />
+        <Label text="BootstrapFX provides styling for common inline label elements." />
+        <Label layoutX="10.0" layoutY="2865.0" styleClass="display-3" text="Examples" />
+        <Label styleClass="mark-primary"> <VBox.margin> <Insets left="20.0" /> </VBox.margin>
+            <graphic>
+                <TextFlow>
+                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="You can use the " />
+                    <Label styleClass="code" text=".mark-primary" />
+                    <Text layoutX="10.0" layoutY="15.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" tag to mark text with a primary background." />
+                </TextFlow>
+            </graphic>
+        </Label>
+        <Label layoutX="10.0" layoutY="2512.0" styleClass="mark-success">
+            <graphic>
+                <TextFlow>
+                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="You can use the " />
+                    <Label styleClass="code" text=".mark-success" />
+                    <Text layoutX="10.0" layoutY="15.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" tag to mark text with a success background." />
+                </TextFlow>
+            </graphic>
+            <VBox.margin> <Insets left="20.0" /> </VBox.margin>
+        </Label>
+        <Label layoutX="10.0" layoutY="2512.0" styleClass="mark-info">
+            <graphic>
+                <TextFlow>
+                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="You can use the " />
+                    <Label styleClass="code" text=".mark-info" />
+                    <Text layoutX="10.0" layoutY="15.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" tag to mark text with an info background." />
+                </TextFlow>
+            </graphic>
+            <VBox.margin> <Insets left="20.0" /> </VBox.margin>
+        </Label>
+        <Label layoutX="10.0" layoutY="2536.0" styleClass="mark-warning">
+            <graphic>
+                <TextFlow>
+                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="You can use the " />
+                    <Label styleClass="code" text=".mark-warning" />
+                    <Text layoutX="10.0" layoutY="15.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" tag to mark text with a warning background." />
+                </TextFlow>
+            </graphic>
+            <VBox.margin> <Insets left="20.0" /> </VBox.margin>
+        </Label>
+        <Label layoutX="10.0" layoutY="2512.0" styleClass="mark-danger">
+            <graphic>
+                <TextFlow>
+                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="You can use the " />
+                    <Label styleClass="code" text=".mark-danger" />
+                    <Text layoutX="10.0" layoutY="15.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" tag to mark text with a danger background." />
+                </TextFlow>
+            </graphic>
+            <VBox.margin> <Insets left="20.0" /> </VBox.margin>
+        </Label>
+        <Label layoutX="10.0" layoutY="2560.0" styleClass="underlined">
+            <graphic>
+                <TextFlow>
+                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="You can use the " />
+                    <Label styleClass="code" text=".underlined" />
+                    <Text layoutX="10.0" layoutY="15.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" tag to highlight text as underlined." />
+                </TextFlow>
+            </graphic>
+            <VBox.margin> <Insets left="20.0" /> </VBox.margin>
+        </Label>
+        <Label layoutX="30.0" layoutY="1016.0" styleClass="fine-print">
+            <graphic>
+                <TextFlow>
+                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="You can use the " />
+                    <Label styleClass="code" text=".fine-print" />
+                    <Text layoutX="10.0" layoutY="15.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" tag to highlight text as fine print." />
+                </TextFlow>
+            </graphic>
+            <VBox.margin> <Insets left="20.0" /> </VBox.margin>
+        </Label>
+        <Label layoutX="10.0" layoutY="753.0" text="Text Utilities"> <styleClass> <String fx:value="heading" /> <String fx:value="h1" /> </styleClass> </Label>
+        <Separator layoutX="10.0" layoutY="805.0" prefWidth="200.0" />
+        <Label layoutX="10.0" layoutY="816.0" text="You can change text alignment, transform, style, weight, and color with text utilities provided by BootstrapFX" />
+        <Label layoutX="10.0" layoutY="1080.0" text="Text Alignment"> <styleClass> <String fx:value="display" /> <String fx:value="display-2" /> </styleClass> </Label>
+        <Label layoutX="10.0" layoutY="1135.0" text="For left, right, and center alignment, responsive classes are available that use the same viewport width as that of the parent node container" />
+        <Label layoutX="10.0" layoutY="2893.0" styleClass="display-4" text="Examples" />
+        <Label text="By default, text is aligned to the left."> <VBox.margin> <Insets left="20.0" /> </VBox.margin> </Label>
+        <Label prefWidth="650.0" styleClass="text-center">
+            <graphic>
+                <TextFlow prefWidth="678.0">
+                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="You can use the " />
+                    <Label styleClass="code" text=".text-center" />
+                    <Text layoutX="10.0" layoutY="15.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" tag to align text at the center." />
+                </TextFlow>
+            </graphic>
+            <VBox.margin> <Insets left="20.0" /> </VBox.margin>
+        </Label>
+        <Label prefWidth="650.0" styleClass="text-right">
+            <graphic>
+                <TextFlow prefWidth="678.0">
+                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="You can use the  " />
+                    <Label styleClass="code" text=".text-right" />
+                    <Text layoutX="10.0" layoutY="15.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" tag to align text on the right." />
+                </TextFlow>
+            </graphic>
+            <VBox.margin> <Insets left="20.0" /> </VBox.margin>
+        </Label>
+        <VBox layoutX="10.0" layoutY="97.0" styleClass="blockquote">
+            <Label text="By default BootstrapFX sets text alignment for all nodes as justified and sets wrap text for all labels to true i.e. If a run oftext exceeds the width of the Labeled, then the text should wrap onto another line." />
+        </VBox>
+        <Label layoutX="10.0" layoutY="1102.0" text="Text Variants"> <styleClass> <String fx:value="display" /> <String fx:value="display-2" /> </styleClass> </Label>
+        <Label layoutX="10.0" layoutY="1135.0" text="You can quickly change the font variant by:" />
+        <Label layoutX="10.0" layoutY="1174.0" styleClass="text-bold" text="You can use the .text-bold tag to transform text to bold."> <VBox.margin> <Insets left="20.0" /> </VBox.margin> </Label>
+        <Label layoutX="30.0" layoutY="1334.0" styleClass="text-bold-italic" text="You can use the .text-bold-italic tag to transform text to bold-italic."> <VBox.margin> <Insets left="20.0" /> </VBox.margin> </Label>
+        <Label layoutX="10.0" layoutY="1356.0" styleClass="text-semibold" text="You can use the .text-semibold tag to transform text to semibold."> <VBox.margin> <Insets left="20.0" /> </VBox.margin> </Label>
+        <Label layoutX="30.0" layoutY="1356.0" text="This is the default font variant"> <VBox.margin> <Insets left="20.0" /> </VBox.margin> </Label>
+        <Label layoutX="30.0" layoutY="1378.0" styleClass="text-italic" text="You can use the .text-italic tag to transform text to italic."> <VBox.margin> <Insets left="20.0" /> </VBox.margin> </Label>
+        <Label layoutX="10.0" layoutY="1417.0" styleClass="text-semilight" text="You can use the .text-semilight tag to transform text to semilight."> <VBox.margin> <Insets left="20.0" /> </VBox.margin> </Label>
+        <Label layoutX="10.0" layoutY="1439.0" styleClass="text-semilight-italic" text="You can use the .text-semilight-italic tag to transform text to semilight-italic."> <VBox.margin> <Insets left="20.0" /> </VBox.margin> </Label>
+        <Label layoutX="10.0" layoutY="1017.0" text="Contextual Colors"> <styleClass> <String fx:value="display-2" /> <String fx:value="display" /> </styleClass> </Label>
+        <Label layoutX="10.0" layoutY="1080.0" text="Convey meaning through color with a handful of color utility classes provided by BootstrapFX." />
+        <Label layoutX="10.0" layoutY="1623.0" styleClass="display-4" text="Examples" />
+        <Label layoutX="10.0" layoutY="1581.0" text="By default labels take the theme color of BootstrapFX"> <VBox.margin> <Insets left="20.0" /> </VBox.margin> </Label>
+        <Label layoutX="30.0" layoutY="1452.0" styleClass="text-primary">
+            <graphic>
+                <TextFlow prefWidth="678.0">
+                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="To get this effect use the " />
+                    <Label styleClass="code" text=".text-primary" />
+                    <Text layoutX="10.0" layoutY="15.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" tag." />
+                </TextFlow>
+            </graphic>
+            <VBox.margin> <Insets left="20.0" /> </VBox.margin>
+        </Label>
+        <Label layoutX="30.0" layoutY="1886.0" styleClass="text-success">
+            <graphic>
+                <TextFlow prefWidth="678.0">
+                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="To get this effect use the " />
+                    <Label styleClass="code" text=".text-success" />
+                    <Text layoutX="10.0" layoutY="15.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" tag." />
+                </TextFlow>
+            </graphic>
+            <VBox.margin> <Insets left="20.0" /> </VBox.margin>
+        </Label>
+        <Label layoutX="10.0" layoutY="2331.0" styleClass="text-info">
+            <graphic>
+                <TextFlow prefWidth="678.0">
+                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="To get this effect use the " />
+                    <Label styleClass="code" text=".text-info" />
+                    <Text layoutX="10.0" layoutY="15.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" tag." />
+                </TextFlow>
+            </graphic>
+            <VBox.margin> <Insets left="20.0" /> </VBox.margin>
+        </Label>
+        <Label layoutX="10.0" layoutY="2331.0" styleClass="text-warning">
+            <graphic>
+                <TextFlow prefWidth="678.0">
+                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="To get this effect use the " />
+                    <Label styleClass="code" text=".text-warning" />
+                    <Text layoutX="10.0" layoutY="15.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" tag." />
+                </TextFlow>
+            </graphic>
+            <VBox.margin> <Insets left="20.0" /> </VBox.margin>
+        </Label>
+        <Label layoutX="10.0" layoutY="2355.0" styleClass="text-danger">
+            <graphic>
+                <TextFlow prefWidth="678.0">
+                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="To get this effect use the " />
+                    <Label styleClass="code" text=".text-danger" />
+                    <Text layoutX="10.0" layoutY="15.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" tag." />
+                </TextFlow>
+            </graphic>
+            <VBox.margin> <Insets left="20.0" /> </VBox.margin>
+        </Label>
+        <Label layoutX="10.0" layoutY="1494.0" text="Code"> <styleClass> <String fx:value="heading" /> <String fx:value="h1" /> </styleClass> </Label>
+        <Separator layoutX="10.0" layoutY="1546.0" prefWidth="200.0" />
+        <Label layoutX="30.0" layoutY="1257.0" prefWidth="658.0" text="Below is the documentation and examples for displaying inline and multiline blocks of code with BootstrapFX." />
+        <Label layoutX="10.0" layoutY="2003.0" text="Inline code"> <styleClass> <String fx:value="display" /> <String fx:value="display-2" /> </styleClass> </Label>
+        <Label layoutX="30.0" layoutY="1798.0">
+            <graphic>
+                <TextFlow prefWidth="678.0">
+                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Use the " />
+                    <Label styleClass="code" text=".code" />
+                    <Text layoutX="10.0" layoutY="15.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" tag wrap inline snippets of code. Be sure to escape any special characters in your FXML code for proper rendering." />
+                </TextFlow>
+            </graphic>
+        </Label>
+        <Label layoutX="10.0" layoutY="3079.0" styleClass="display-4" text="Example" />
+        <Label>
+            <graphic>
+                <TextFlow prefWidth="678.0">
+                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="For example, " />
+                    <Label styleClass="code" text="&lt;section&gt;" />
+                    <Text layoutX="10.0" layoutY="15.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" should be wrapped as inline." />
+                </TextFlow>
+            </graphic>
+            <VBox.margin> <Insets left="20.0" /> </VBox.margin>
+        </Label>
+        <Label layoutX="10.0" layoutY="1279.0" text="Code blocks"> <styleClass> <String fx:value="display" /> <String fx:value="display-2" /> </styleClass> </Label>
+        <Label layoutX="10.0" layoutY="2036.0">
+            <graphic>
+                <TextFlow prefWidth="678.0">
+                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Use " />
+                    <Label styleClass="code" text=".pre" />
+                    <Text layoutX="10.0" layoutY="15.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" tag for multiple lines of code. Once again, be sure to escape any special characters in the code for proper rendering." />
+                </TextFlow>
+            </graphic>
+        </Label>
+        <Label layoutX="10.0" layoutY="2129.0" styleClass="display-4" text="Example" />
+        <VBox styleClass="pre">
+            <Label prefWidth="658.0" text="//Generates a random password of specified length" />
+            <Label prefWidth="658.0" text="public static void generatePass(int length) {" />
+            <Label prefWidth="658.0" text="for (int i= 0; i&lt;length; i++)"> <VBox.margin> <Insets left="20.0" /> </VBox.margin> </Label>
+            <Label prefWidth="658.0" text="password+= COMBINATIONS.charAt(new Random().nextInt(77));"> <VBox.margin> <Insets left="40.0" /> </VBox.margin> </Label>
+            <Label prefWidth="658.0" text="validatePass();"> <VBox.margin> <Insets left="20.0" /> </VBox.margin> </Label>
+            <Label prefWidth="658.0" text="}" />
+        </VBox>
+        <Label layoutX="10.0" layoutY="1796.0" text="Variables"> <styleClass> <String fx:value="display" /> <String fx:value="display-2" /> </styleClass> </Label>
+        <Label layoutX="10.0" layoutY="2134.0">
+            <graphic>
+                <TextFlow prefWidth="678.0">
+                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="For indicating variables use the " />
+                    <Label styleClass="code" text=".var" />
+                    <Text layoutX="10.0" layoutY="15.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" tag." />
+                </TextFlow>
+            </graphic>
+        </Label>
+        <Label layoutX="10.0" layoutY="3088.0" styleClass="display-4" text="Example" />
+        <Label layoutX="10.0" layoutY="2390.0">
+            <graphic>
+                <TextFlow prefWidth="678.0">
+                    <Label styleClass="var" text="y" />
+                    <Text layoutX="10.0" layoutY="15.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" = " />
+                    <Label layoutX="10.0" layoutY="11.0" styleClass="var" text="mx" />
+                    <Text layoutX="33.0" layoutY="10.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" + " />
+                    <Label layoutX="33.0" layoutY="11.0" styleClass="var" text="c" />
+                </TextFlow>
+            </graphic>
+            <VBox.margin> <Insets left="20.0" /> </VBox.margin>
+        </Label>
+        <Label layoutX="10.0" layoutY="2000.0" text="User input"> <styleClass> <String fx:value="display" /> <String fx:value="display-2" /> </styleClass> </Label>
+        <Label layoutX="10.0" layoutY="2390.0">
+            <graphic>
+                <TextFlow prefWidth="678.0">
+                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Use the " />
+                    <Label styleClass="code" text=".kbd" />
+                    <Text layoutX="10.0" layoutY="15.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" tag to indicate input that is typically entered via keyboard. See examples below." />
+                </TextFlow>
+            </graphic>
+        </Label>
+        <Label layoutX="10.0" layoutY="3064.0" styleClass="display-4" text="Example" />
+        <Label layoutX="10.0" layoutY="2481.0">
+            <graphic>
+                <TextFlow prefWidth="678.0">
+                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="To switch directories, type " />
+                    <Label styleClass="kbd" text="cd" />
+                    <Text layoutX="10.0" layoutY="15.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" followed by the name of the directory." />
+                </TextFlow>
+            </graphic>
+            <VBox.margin> <Insets left="20.0" /> </VBox.margin>
+        </Label>
+        <Label layoutX="30.0" layoutY="2505.0">
+            <graphic>
+                <TextFlow prefWidth="678.0">
+                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="To edit settings, press " />
+                    <Label styleClass="kbd" text="ctrl + ," />
+                </TextFlow>
+            </graphic>
+            <VBox.margin> <Insets left="20.0" /> </VBox.margin>
+        </Label>
+        <Label layoutX="10.0" layoutY="2438.0" text="Sample output"> <styleClass> <String fx:value="display" /> <String fx:value="display-2" /> </styleClass> </Label>
+        <Label layoutX="10.0" layoutY="2481.0">
+            <graphic>
+                <TextFlow prefWidth="678.0">
+                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="For indicating sample output from a program use the " />
+                    <Label styleClass="code" text=".samp" />
+                    <Text layoutX="10.0" layoutY="15.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" tag." />
+                </TextFlow>
+            </graphic>
+        </Label>
+        <Label layoutX="10.0" layoutY="2572.0" styleClass="display-4" text="Example" />
+        <Label styleClass="samp" text="This text is meant to be treated as sample output from a computer program."> <VBox.margin> <Insets left="20.0" /> </VBox.margin> </Label>
+        <Label layoutX="10.0" layoutY="172.0" text="Blockquote"> <styleClass> <String fx:value="heading" /> <String fx:value="h1" /> </styleClass> </Label>
+        <Separator layoutX="10.0" layoutY="244.0" prefWidth="200.0" />
+        <Label layoutX="10.0" layoutY="255.0">
+            <graphic>
+                <TextFlow>
+                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="For quoting blocks of content from another source or within your document, wrap all your Labels with a VBox then use the " />
+                    <Label styleClass="code" text=".blockquote" />
+                    <Text layoutX="10.0" layoutY="15.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" tag on the VBox container." />
+                </TextFlow>
+            </graphic>
+        </Label>
+        <Label layoutX="10.0" layoutY="3448.0">
+            <graphic>
+                <TextFlow prefWidth="678.0">
+                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Add a " />
+                    <Label styleClass="code" text=".blockquote-heading" />
+                    <Text layoutX="10.0" layoutY="15.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" tag on a label to identify the blockquote heading." />
+                </TextFlow>
+            </graphic>
+        </Label>
+        <Label layoutX="10.0" layoutY="296.0" styleClass="display-3" text="Example" />
+        <VBox layoutX="10.0" layoutY="97.0" styleClass="blockquote">
+            <Label styleClass="blockquote-heading" text="Blockquote Heading" />
+            <Label text="Blockquotes are mainly used to give emphasis to a quote or citation. You can also use these for some extra text hierarchy and emphasis." />
+        </VBox>
+        <Label layoutX="10.0" layoutY="3043.0" text="Naming a source"> <styleClass> <String fx:value="display" /> <String fx:value="display-2" /> </styleClass> </Label>
+        <Label layoutX="10.0" layoutY="3087.0">
+            <graphic>
+                <TextFlow prefWidth="678.0">
+                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Add a " />
+                    <Label styleClass="code" text=".blockquote-footer" />
+                    <Text layoutX="10.0" layoutY="15.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" on a label for identifying the source. Wrap the name of the source work in " />
+                    <Label layoutX="47.0" layoutY="11.0" styleClass="code" text=".cite" />
+                    <Text layoutX="176.0" layoutY="10.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" tag." />
+                </TextFlow>
+            </graphic>
+        </Label>
+        <Label layoutX="10.0" layoutY="3111.0" styleClass="display-4" text="Example" />
+        <VBox layoutX="10.0" layoutY="3310.0" styleClass="blockquote">
+            <Label text="Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." />
+            <Label>
+                <graphic>
+                    <TextFlow prefWidth="678.0">
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="blockquote-footer" text="- Someone famous in " />
+                        <Label styleClass="cite" text="Source Title" />
+                    </TextFlow>
+                </graphic>
+            </Label>
+        </VBox>
+    </VBox>
+</ScrollPane>

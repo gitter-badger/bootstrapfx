@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXTabPane?>
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="950.0" style="-fx-border-color: #4C4A48;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="demo.controller.Controller">
+   <stylesheets>
+      <URL value="@../../../../lib/src/main/resources/assets/css/bootstrapfx.css" />
+      <URL value="@../assets/css/demo.css" />
+   </stylesheets>
+   <AnchorPane fx:id="login_pane" prefHeight="600.0" prefWidth="950.0">
+      <Label id="title" layoutX="10.0" layoutY="10.0" text="Sign in" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="122.0">
+         <styleClass>
+            <String fx:value="text-inverse" />
+            <String fx:value="text-bold" />
+         </styleClass>
+      </Label>
+      <Label fx:id="err_msg" layoutX="391.0" layoutY="244.0" styleClass="text-bold" text="UserID/Password mismatch" visible="false" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="210.0" />
+      <TextField fx:id="usr_id" layoutX="350.0" layoutY="273.0" promptText="User ID" AnchorPane.topAnchor="250.0" />
+      <PasswordField fx:id="usr_pass" layoutX="350.0" layoutY="336.0" promptText="Password" AnchorPane.topAnchor="304.0" />
+      <JFXCheckBox fx:id="keep_loggedin" layoutX="409.0" layoutY="378.0" styleClass="text-inverse" text="Keep me logged in" AnchorPane.topAnchor="358.0" />
+      <JFXButton fx:id="btn_cancel" layoutX="350.0" layoutY="435.0" onAction="#windowControl" text="CANCEL" AnchorPane.topAnchor="398.0">
+         <styleClass>
+            <String fx:value="btn-lg" />
+            <String fx:value="btn-danger" />
+         </styleClass>
+      </JFXButton>
+      <JFXButton fx:id="btn_login" layoutX="480.0" layoutY="402.0" text="LOGIN" AnchorPane.topAnchor="398.0">
+         <styleClass>
+            <String fx:value="btn-lg" />
+            <String fx:value="btn-info" />
+         </styleClass>
+      </JFXButton>
+      <Label fx:id="forgot_pass" layoutX="419.0" layoutY="487.0" styleClass="text-inverse" text="Forgot password?" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="463.0" />
+      <Label id="copyright_login" layoutX="376.0" layoutY="564.0" styleClass="text-inverse" text="Copyright 2019. All rights reserved" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+   </AnchorPane>
+   <AnchorPane fx:id="main_pane" layoutX="10.0" layoutY="10.0" prefHeight="600.0" prefWidth="950.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <AnchorPane id="header" prefHeight="135.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <Label id="title" text="BootstrapFX" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="0.0">
+            <styleClass>
+               <String fx:value="text-inverse" />
+               <String fx:value="text-bold" />
+            </styleClass>
+         </Label>
+         <Button fx:id="btn_out" layoutX="225.0" layoutY="42.0" mnemonicParsing="false" onAction="#windowControl" styleClass="btn-icon" text="Button" AnchorPane.rightAnchor="120.0" AnchorPane.topAnchor="0.0">
+            <tooltip>
+               <Tooltip text="Loguot" />
+            </tooltip>
+         </Button>
+         <Separator orientation="VERTICAL" prefHeight="30.0" AnchorPane.rightAnchor="110.0" AnchorPane.topAnchor="6.0" />
+         <Button fx:id="btn_min" layoutX="465.0" layoutY="50.0" mnemonicParsing="false" onAction="#windowControl" styleClass="btn-icon" text="Button" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="0.0">
+            <tooltip>
+               <Tooltip text="Minimize" />
+            </tooltip>
+         </Button>
+         <Button fx:id="btn_clz" layoutX="297.0" layoutY="65.0" mnemonicParsing="false" onAction="#windowControl" styleClass="btn-icon" text="Button" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <tooltip>
+               <Tooltip text="Close" />
+            </tooltip>
+         </Button>
+      </AnchorPane>
+      <Separator orientation="VERTICAL" prefHeight="200.0" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="210.0" AnchorPane.topAnchor="155.0" />
+      <JFXTabPane prefHeight="600.0" prefWidth="950.0" AnchorPane.bottomAnchor="35.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="98.0">
+         <Tab text="Controls">
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <Group AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="20.0">
+                  <JFXButton fx:id="typos" onAction="#navigationControl" text="Typography">
+                     <styleClass>
+                        <String fx:value="ctrl" />
+                        <String fx:value="ctrl-selected" />
+                     </styleClass>
+                  </JFXButton>
+                  <JFXButton fx:id="bttns" layoutY="35.0" onAction="#navigationControl" styleClass="ctrl" text="Buttons" />
+                  <JFXButton fx:id="forms" layoutY="70.0" onAction="#navigationControl" styleClass="ctrl" text="Forms" />
+                  <JFXButton fx:id="views" layoutY="105.0" onAction="#navigationControl" styleClass="ctrl" text="Views" />
+               </Group>
+               <AnchorPane fx:id="views_pane" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="215.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="20.0">
+                  <fx:include fx:id="views_view" source="views_pane.fxml" />
+               </AnchorPane>
+               <AnchorPane fx:id="forms_pane" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="215.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="20.0">
+                  <fx:include fx:id="forms_view" source="forms_pane.fxml" />
+               </AnchorPane>
+               <AnchorPane fx:id="bttns_pane" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="215.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="20.0">
+                  <fx:include fx:id="bttns_view" source="bttns_pane.fxml" />
+               </AnchorPane>
+               <AnchorPane fx:id="typos_pane" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="215.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="20.0">
+                  <fx:include fx:id="typos_view" source="typos_pane.fxml" />
+               </AnchorPane>
+            </AnchorPane>
+         </Tab>
+         <Tab disable="true" text="Nodes">
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+         </Tab>
+         <Tab disable="true" text="Charts">
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+         </Tab>
+         <Tab disable="true" text="Components">
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+         </Tab>
+      </JFXTabPane>
+      <AnchorPane id="footer" layoutX="20.0" layoutY="20.0" prefHeight="30.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <Label styleClass="text-inverse" text="Copyright 2019. All rights reserved" AnchorPane.bottomAnchor="6.0" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="2.0" />
+         <Label layoutX="10.0" layoutY="10.0" styleClass="text-inverse" text="BootstrapFX® v1.0.0" AnchorPane.bottomAnchor="6.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="2.0" />
+      </AnchorPane>
+   </AnchorPane>
+</AnchorPane>

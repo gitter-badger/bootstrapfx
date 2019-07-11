@@ -1,0 +1,144 @@
+/*
+    Created on : June 30, 2019
+    Author     : BENJAH
+
+    Main stylesheet for this project
+*/
+
+
+/* BootstrapFX Reset **************************************************************************************************/
+.text-inverse {
+    -fx-text-fill: white;
+}
+
+.button, .toggle-button, .choice-box, .text-field {
+    -fx-pref-height: 30;
+}
+
+
+/* Login Pane *********************************************************************************************************/
+#login_pane {
+    -fx-background-image:  url('../img/background.png');
+}
+
+#err_msg {
+    -fx-text-fill: derive(-d, 35%);
+}
+
+#title, #err_msg, #usr_id, #usr_pass, #forgot_pass, #copyright_login {
+    -fx-alignment: CENTER;
+    -fx-pref-width: 250;
+}
+
+#usr_id:focused, #usr_pass:focused {
+    -fx-background-color: derive(-t, 165%);
+}
+
+#usr_id:focused, #usr_pass:focused {
+    -fx-border-color: transparent;
+}
+
+
+/* Main Pane **********************************************************************************************************/
+#title {
+    -fx-font-size: 40;
+}
+
+#btn_clz {
+    -fx-graphic:  url('../img/icons8_close_32px.png');
+}
+
+#btn_min {
+    -fx-graphic:  url('../img/icons8_minimize_32px.png');
+}
+
+#btn_out {
+    -fx-graphic:  url('../img/icons8_logout_rounded_32px.png');
+}
+
+#btn_clz, #btn_min, #btn_out {
+    -fx-pref-height: 3.333333em;
+    -fx-pref-width: 3.333333em;
+}
+
+#btn_min:hover, #btn_out:hover {
+    -fx-background-color: rgba(255,255,255,.1);
+}
+
+#btn_clz:hover {
+    -fx-background-color: -d;
+}
+
+.jfx-tab-pane .tab{
+    -fx-pref-width: 11.25em;
+}
+
+.jfx-tab-pane .tab-header-background{
+    -fx-background-color: -t;
+}
+
+.jfx-tab-pane .headers-region .tab-selected-line {
+    -fx-background-color: #FFFFFF;
+}
+
+.jfx-tab-pane .headers-region > .tab > .jfx-rippler{
+    -jfx-rippler-fill: #FFFFFF;
+}
+
+.jfx-tab-pane .headers-region .tab .tab-container .tab-label {
+    -fx-font-family: 'Segoe UI Semibold';
+    -fx-text-fill: rgba(255,255,255,.75);
+}
+
+.jfx-tab-pane .headers-region .tab:selected .tab-container .tab-label {
+    -fx-text-fill: #FFFFFF;
+}
+
+.ctrl{
+    -fx-alignment: BASELINE_LEFT;
+    -fx-border-color: transparent;
+    -fx-border-width: 0em 0em 0em 0.25em;
+    -fx-pref-width: 14.166667em;
+    -fx-pref-height: 2.5em;
+}
+
+.ctrl-selected{
+    -fx-border-color: transparent transparent transparent -t;
+}
+
+.ctrl-selected, .ctrl:hover{
+    -fx-background-color: derive(-t, 150%);
+}
+
+.ctrl:pressed{
+    -fx-effect: null;
+}
+
+#main_pane, #typos_pane,  #bttns_pane, #forms_pane, #views_pane {
+    -fx-background-color: white;
+}
+
+#header, #footer {
+    -fx-background-color: -t;
+}
+
+/* Controls TabPane ***************************************************************************************************/
+#typos{
+    -fx-graphic: url('../img/icons8_Tag_Window_16px.png');
+}
+
+#bttns{
+    -fx-graphic: url('../img/icons8_Natural_User_Interface_16px.png');
+}
+
+#forms{
+    -fx-graphic: url('../img/icons8_Input_16px.png');
+}
+
+#views{
+    -fx-graphic: url('../img/icons8_Checklist_16px.png');
+}
+
+#typos_pane, #bttns_pane, #forms_pane, #views_pane{
+    -fx-background-color: #FFFFFF;
+}
