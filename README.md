@@ -87,9 +87,8 @@ bootstrapfx/
   │       └── *.png
   └── bootsrapfx.jar
 ```
-This is the most basic form of BootstrapFX for quick drop-in usage in nearly any JavaFX project.
-
-**IMPORTANT**: The package doesn't include documentation, source files, or any optional dependencies (jfoenix).
+This is the most basic form of BootstrapFX for quick drop-in usage in nearly any JavaFX project. The package doesn't 
+include documentation, source files, or any optional dependencies (jfoenix).
 
 <b>Step 1.</b> Extract the downloaded archive. Make sure to select the `Extract Here` option. Now, open the extracted 
 folder and copy the `assets` folder into the `resources` folder of your project.
@@ -130,13 +129,13 @@ Step 1. Add the JitPack repository to your build file
 ```groovy
 repositories {
     mavenCentral()
-    maven { url 'https://jitpack.io' }
+    maven { url 'https://jitpack.io' } //The JitPack repository
 }      
 ```
 Step 2. Add the dependency
 ```groovy
 dependencies {
-    implementation 'com.github.wasulabenjamin:bootstrapfx:master-SNAPSHOT'
+    implementation 'com.github.wasulabenjamin:bootstrapfx:master-SNAPSHOT' //BootstrapFX dependency
 }     
 ```
 
@@ -159,9 +158,7 @@ Step 2. Add the dependency
 </dependency>
 ```
 
-The first time you request a project JitPack checks out the code, builds it and serves the build artifacts (jar, aar).
-
-**NOTE** The project doesn't have any GitHub Releases yet, that's why we use the `master-SNAPSHOT` as the version.
+The first time you request the project JitPack checks out the code, builds it and serves the build artifacts (jar).
 
 # Starter Templates
 Be sure to have your pages set up with the latest design and development standards. That means specifying the XML 
