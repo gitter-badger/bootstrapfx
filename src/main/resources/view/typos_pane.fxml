@@ -10,8 +10,8 @@
 <?import javafx.scene.text.Text?>
 <?import javafx.scene.text.TextFlow?>
 
-<ScrollPane stylesheets="@../../../../lib/src/main/resources/assets/css/bootstrapfx.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1">
-    <VBox prefWidth="698.0">
+<ScrollPane prefWidth="713.0" stylesheets="@../../../../lib/src/main/resources/assets/css/bootstrapfx.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1">
+    <VBox prefWidth="697.0">
         <Label styleClass="h1" text="Global Settings" />
         <Separator prefWidth="200.0" />
         <Label text="BootstrapFX sets basic global headings, display and typography styles. When more control is needed, checkout the textual utility classes." />

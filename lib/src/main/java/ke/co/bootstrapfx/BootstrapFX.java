@@ -12,6 +12,7 @@ import java.time.format.DateTimeFormatter;
 
 /**
  * @author  Wasula Benjamin
+ * @since   BootstrapFX 1.0
  */
 public class BootstrapFX {
     private static Validation validation= new Validation();
@@ -83,7 +84,7 @@ public class BootstrapFX {
             Timeline objTimer= (Timeline) fieldTimer.get(objBehavior);
 
             objTimer.getKeyFrames().clear();
-            objTimer.getKeyFrames().add(new KeyFrame(new Duration(0)));
+            objTimer.getKeyFrames().add(new KeyFrame(new Duration(100)));
         } catch (Exception e) {
             e.printStackTrace();
         } finally {

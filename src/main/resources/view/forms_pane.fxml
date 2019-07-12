@@ -1,14 +1,297 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Hyperlink?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.ScrollPane?>
 <?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.text.TextFlow?>
 
-<ScrollPane stylesheets="@../../../../lib/src/main/resources/assets/css/bootstrapfx.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1">
-    <VBox prefWidth="698.0">
-        <Label text="typos" />
+<ScrollPane prefWidth="713.0" stylesheets="@../../../../lib/src/main/resources/assets/css/bootstrapfx.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="demo.controller.Forms">
+    <VBox prefWidth="697.0">
+        <Label styleClass="h1" text="TextFields" />
         <Separator prefWidth="200.0" />
+        <Label text="The TextField class implements a UI control that accepts and displays text input. It provides capabilities to receive text input from a user. Along with another text input control, PasswordField, this class extends the TextInput class, a super class for all the text controls available through the JavaFX API." />
+        <Label layoutX="10.0" layoutY="10.0" text="TextField Tags"> <styleClass> <String fx:value="display-2" /> <String fx:value="display" /> </styleClass> </Label>
+        <Separator layoutX="10.0" layoutY="47.0" prefWidth="200.0" />
+        <Label layoutX="10.0" layoutY="10.0">
+            <graphic>
+                <TextFlow>
+                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="There is no need to add the " />
+                    <Label styleClass="code" text=".text-field" />
+                    <Text layoutX="10.0" layoutY="10.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" tag as it is automatically added to a " />
+                    <Label layoutX="35.0" layoutY="11.0" styleClass="text-bold" text="TextField" />
+                    <Text layoutX="81.0" layoutY="10.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" control." />
+                </TextFlow>
+            </graphic>
+        </Label>
+        <Label layoutX="10.0" layoutY="1080.0" styleClass="display-3" text="Example" />
+        <TextField maxWidth="200.0" prefWidth="200.0" promptText="Default"> <VBox.margin> <Insets top="10.0" /> </VBox.margin> </TextField>
+        <VBox layoutX="10.0" layoutY="1492.0" styleClass="blockquote">
+            <Label styleClass="blockquote-heading" text="PasswordFields" />
+            <Label>
+                <graphic>
+                    <TextFlow>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Generally, a PasswordField control implements a specialized text field, therefore there is no need to add the " />
+                        <Label styleClass="code" text=".text-field" />
+                        <Text layoutX="10.0" layoutY="10.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" tag to a " />
+                        <Label layoutX="35.0" layoutY="11.0" styleClass="text-bold" text="PasswordField" />
+                        <Text layoutX="81.0" layoutY="10.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" control as it automatically inherits all the styles provided for a TextField control. " />
+                    </TextFlow>
+                </graphic>
+            </Label>
+            <Label layoutX="25.0" layoutY="15.0" text="TextField Width"> <styleClass> <String fx:value="blockquote-heading" /> <String fx:value="display" /> </styleClass> </Label>
+            <Label layoutX="25.0" layoutY="43.0" text="Generally, TextFields span to take the width of the parent node. For larger or smaller TextFields, BootstrapFX provides additional classes for sizes." />
+        </VBox>
+        <Label layoutX="10.0" layoutY="479.0" text="TextField Sizes"> <styleClass> <String fx:value="display-2" /> <String fx:value="display" /> </styleClass> </Label>
+        <Separator layoutX="10.0" layoutY="531.0" prefWidth="200.0" />
+        <Label text="Fancy larger or smaller TextFields? BootstrapFX provides 5 additional classes for sizes. This include:" />
+        <Label layoutX="10.0" layoutY="95.0">
+            <graphic>
+                <TextFlow>
+                    <Text layoutX="61.0" layoutY="10.0" strokeType="OUTSIDE" strokeWidth="0.0" text="- " />
+                    <Label styleClass="code" text=".field-xs" />
+                    <Text layoutX="10.0" layoutY="10.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" : Renders extra small fields. Basically having a width of 100px" />
+                </TextFlow>
+            </graphic>
+            <VBox.margin> <Insets left="20.0" /> </VBox.margin>
+        </Label>
+        <Label layoutX="10.0" layoutY="878.0">
+            <graphic>
+                <TextFlow>
+                    <Text layoutX="61.0" layoutY="10.0" strokeType="OUTSIDE" strokeWidth="0.0" text="- " />
+                    <Label styleClass="code" text=".field-sm" />
+                    <Text layoutX="10.0" layoutY="10.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" : Renders small sized fields. Basically having a width of 120px" />
+                </TextFlow>
+            </graphic>
+            <VBox.margin> <Insets left="20.0" /> </VBox.margin>
+        </Label>
+        <Label layoutX="10.0" layoutY="878.0">
+            <graphic>
+                <TextFlow>
+                    <Text layoutX="61.0" layoutY="10.0" strokeType="OUTSIDE" strokeWidth="0.0" text="- " />
+                    <Label styleClass="code" text=".field-md" />
+                    <Text layoutX="10.0" layoutY="10.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" : Renders medium sized fields. Basically having a width of 140px" />
+                </TextFlow>
+            </graphic>
+            <VBox.margin> <Insets left="20.0" /> </VBox.margin>
+        </Label>
+        <Label layoutX="10.0" layoutY="902.0">
+            <graphic>
+                <TextFlow>
+                    <Text layoutX="61.0" layoutY="10.0" strokeType="OUTSIDE" strokeWidth="0.0" text="- " />
+                    <Label styleClass="code" text=".field-lg" />
+                    <Text layoutX="10.0" layoutY="10.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" : Renders large fields. Basically having a width of 160px" />
+                </TextFlow>
+            </graphic>
+            <VBox.margin> <Insets left="20.0" /> </VBox.margin>
+        </Label>
+        <Label layoutX="10.0" layoutY="542.0">
+            <graphic>
+                <TextFlow>
+                    <Text layoutX="61.0" layoutY="10.0" strokeType="OUTSIDE" strokeWidth="0.0" text="- " />
+                    <Label styleClass="code" text=".field-xl" />
+                    <Text layoutX="10.0" layoutY="10.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" : Renders extra large fields. Basically having a width of 180px" />
+                </TextFlow>
+            </graphic>
+            <VBox.margin> <Insets left="20.0" /> </VBox.margin>
+        </Label>
+        <Label layoutX="10.0" layoutY="583.0" styleClass="display-3" text="Examples" />
+        <HBox layoutX="10.0" layoutY="626.0">
+            <TextField promptText="field-xs" styleClass="field-xs" />
+            <TextField promptText="field-sm" styleClass="field-sm" />
+            <TextField layoutX="10.0" layoutY="25.0" promptText="field-md" styleClass="field-md" />
+            <TextField layoutX="182.0" layoutY="25.0" promptText="field-lg" styleClass="field-lg" />
+            <TextField layoutX="354.0" layoutY="25.0" promptText="field-xl" styleClass="field-xl" />
+        </HBox>
+        <Label layoutX="10.0" layoutY="621.0" text="JFoenix TextFields"> <styleClass> <String fx:value="display-2" /> <String fx:value="display" /> </styleClass> </Label>
+        <Separator layoutX="10.0" layoutY="665.0" prefWidth="200.0" />
+        <Label layoutX="10.0" layoutY="676.0" text="JFoenix provides material design look and feel for Text Fields. BootstrapFX customize style for JFoenix TextFields." />
+        <Label layoutX="10.0" layoutY="1933.0">
+            <graphic>
+                <TextFlow>
+                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="There is no need to add the " />
+                    <Label styleClass="code" text=".text-field" />
+                    <Text layoutX="10.0" layoutY="10.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" class as it is automatically added to the " />
+                    <Label layoutX="35.0" layoutY="11.0" styleClass="text-bold" text="JFXTextField" />
+                    <Text layoutX="81.0" layoutY="10.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" control." />
+                </TextFlow>
+            </graphic>
+        </Label>
+        <Label layoutX="10.0" layoutY="641.0" styleClass="display-3" text="Example" />
+        <HBox>
+            <JFXTextField labelFloat="true" promptText="Username" styleClass="field-xl" />
+        </HBox>
+        <VBox layoutX="10.0" layoutY="638.0" styleClass="blockquote">
+            <Label styleClass="blockquote-heading" text="Floating Labels" />
+            <Label text="JFoenix textfields provide floating labels to display the type of input a field requires. Every Text Field and Select should have a label, except for full-width text fields, which use the input’s PromptText instead. Floating Labels and PromptText are aligned with the input line and always visible." />
+            <Label layoutX="30.0" layoutY="54.0" text="Floating Labels appear resting (when a field is inactive and empty) or floating (when a field is active). The label is a text caption or description for the Text Field." />
+        </VBox>
+        <Label layoutX="10.0" layoutY="136.0" text="Validating Fields"> <styleClass> <String fx:value="display-2" /> <String fx:value="display" /> </styleClass> </Label>
+        <Separator layoutX="10.0" layoutY="180.0" prefWidth="200.0" />
+        <Label layoutX="10.0" layoutY="10.0" text="Non-empty TextFields"> <styleClass> <String fx:value="display-2" /> <String fx:value="display" /> </styleClass> </Label>
+        <Label layoutX="10.0" layoutY="191.0">
+            <graphic>
+                <TextFlow>
+                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="In some case you might need to validate a InputControl to ensure nonempty input before submission. On-action of the Submit button event, simply call the " />
+                    <Label styleClass="code" text="isValid(Field... f)" />
+                    <Text layoutX="10.0" layoutY="10.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" method provided by BootstrapFX and pass the fx:id(s) of the TextFields you would wish to validate." />
+                </TextFlow>
+            </graphic>
+        </Label>
+        <Label text="Basically, your code should look like:" />
+        <VBox layoutX="10.0" layoutY="194.0" styleClass="pre">
+            <Label text="\@FXML private void actionControl(ActionEvent e) {" />
+            <Label layoutX="25.0" layoutY="15.0" text="if (e.getSource()==submit) {"> <VBox.margin> <Insets left="20.0" /> </VBox.margin> </Label>
+            <Label layoutX="30.0" layoutY="26.0" text="if(isValid(usr_name, login_pass) {"> <VBox.margin> <Insets left="40.0" /> </VBox.margin> </Label>
+            <Label layoutX="30.0" layoutY="26.0" text="//Your code here on successful validation of TextFields"> <VBox.margin> <Insets left="60.0" /> </VBox.margin> </Label>
+            <Label layoutX="70.0" layoutY="70.0" text="}"> <VBox.margin> <Insets left="40.0" /> </VBox.margin> </Label>
+            <Label layoutX="30.0" layoutY="67.0" text="}"> <VBox.margin> <Insets left="20.0" /> </VBox.margin> </Label>
+            <Label layoutX="30.0" layoutY="149.0" text="}" />
+        </VBox>
+        <Label layoutX="10.0" layoutY="256.0" styleClass="display-3" text="Examples" />
+        <HBox layoutX="10.0" layoutY="293.0">
+            <JFXTextField fx:id="usr_name" promptText="Username" />
+            <JFXPasswordField fx:id="usr_pass" promptText="Password" />
+            <JFXButton fx:id="submit" text="Submit" />
+        </HBox>
+        <VBox layoutX="10.0" layoutY="541.0" styleClass="blockquote">
+            <Label>
+                <graphic>
+                    <TextFlow>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Generally, the BootstrapFX " />
+                        <Label styleClass="code" text="isValid(Field... f)" />
+                        <Text layoutX="10.0" layoutY="10.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" method is a generic method that takes any number of arguments (TextInputControls) and validates each field to ensure a non-empty input." />
+                    </TextFlow>
+                </graphic>
+            </Label>
+            <Label layoutX="30.0" layoutY="26.0" text="For every argument passed, this methods returns true, if and only if, the InputControl input is not empty, otherwise returns false. In case of an empty InputControl, BootstrapFX provide styling to highlight the specific control with a danger outline for easy visualization. It also adds a custom Tooltip indicating that the input is required before submission." />
+        </VBox>
+        <Label layoutX="10.0" layoutY="10.0" text="PasswordFields"> <styleClass> <String fx:value="display-2" /> <String fx:value="display" /> </styleClass> </Label>
+        <Label layoutX="10.0" layoutY="54.0">
+            <graphic>
+                <TextFlow>
+                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="In some case you might need to validate a PasswordField InputControl to ensure it is filled with a valid password string format input before submission. Just like before, on-action of the Submit button event, simply call the " />
+                    <Label styleClass="code" text="isValid(Field... f)" />
+                    <Text layoutX="10.0" layoutY="10.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" method provided by BootstrapFX and pass the fx:id of the PasswordFields you would wish to validate." />
+                </TextFlow>
+            </graphic>
+        </Label>
+        <Label layoutX="10.0" layoutY="112.0">
+            <graphic>
+                <TextFlow>
+                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="In this case, always make sure to add the " />
+                    <Label styleClass="code" text=".password" />
+                    <Text layoutX="10.0" layoutY="10.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" tag to your PasswordField to mark it as an password input type." />
+                </TextFlow>
+            </graphic>
+        </Label>
+        <Label layoutX="10.0" layoutY="136.0" styleClass="display-3" text="Examples" />
+        <HBox layoutX="10.0" layoutY="164.0">
+            <PasswordField fx:id="ent_pass" layoutX="10.0" layoutY="25.0" promptText="Enter Password" styleClass="password" />
+            <PasswordField fx:id="conf_pass" promptText="Confirm Password" />
+            <JFXButton fx:id="pw_submit" text="Submit" />
+        </HBox>
+        <VBox layoutX="10.0" layoutY="221.0" styleClass="blockquote">
+            <Label>
+                <graphic>
+                    <TextFlow>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Generally, the " />
+                        <Label styleClass="code" text=".password" />
+                        <Text layoutX="10.0" layoutY="10.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" tag invokes the BootstrapFX Validation API to perform a regular expression attempting to match the given password input against the password pattern permitted by the complexity requirement policy." />
+                    </TextFlow>
+                </graphic>
+            </Label>
+            <Label text="This matches the presence of at least one lowercase letter, at least one digit i.e. 0-9, at least one special character, at least one capital letter and limits the length of password from minimum 6 letters to maximum 16 letters." />
+        </VBox>
+        <Label layoutX="10.0" layoutY="1126.0" text="Email TextFields"> <styleClass> <String fx:value="display-2" /> <String fx:value="display" /> </styleClass> </Label>
+        <Label layoutX="10.0" layoutY="54.0">
+            <graphic>
+                <TextFlow>
+                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="In some case you might need to validate a TextField InputControl to ensure it is filled with an email string input before submission. Just like before, on-action of the Submit button event, simply call the " />
+                    <Label styleClass="code" text="isValid(Field... f)" />
+                    <Text layoutX="10.0" layoutY="10.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" method provided by BootstrapFX and pass the fx:id of the TextFields you would wish to validate." />
+                </TextFlow>
+            </graphic>
+        </Label>
+        <Label layoutX="10.0" layoutY="1170.0">
+            <graphic>
+                <TextFlow>
+                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="In this case, always make sure to add the " />
+                    <Label styleClass="code" text=".email" />
+                    <Text layoutX="10.0" layoutY="10.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" tag to your InputControl to mark it as an email input type." />
+                </TextFlow>
+            </graphic>
+        </Label>
+        <Label layoutX="10.0" layoutY="1431.0" styleClass="display-3" text="Examples" />
+        <HBox layoutX="10.0" layoutY="1459.0">
+            <JFXTextField fx:id="em_name" promptText="Email" styleClass="email" />
+            <JFXPasswordField fx:id="em_pass" promptText="Password" styleClass="password" />
+            <JFXButton fx:id="em_submit" text="Submit" />
+        </HBox>
+        <VBox layoutX="10.0" layoutY="1516.0" styleClass="blockquote">
+            <Label>
+                <graphic>
+                    <TextFlow>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Generally, the " />
+                        <Label styleClass="code" text=".email" />
+                        <Text layoutX="10.0" layoutY="10.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" tag invokes the BootstrapFX Validation API to perform a regular expression attempting to match the given email input against the email pattern permitted by" />
+                        <Hyperlink fx:id="rfc_5322" text="RFC 5322." />
+                        <Text layoutX="10.0" layoutY="10.0" strokeType="OUTSIDE" strokeWidth="0.0" text="This methods returns true if, and only if, the input email sequence matches this matcher's pattern." />
+                    </TextFlow>
+                </graphic>
+            </Label>
+        </VBox>
+        <Label layoutX="10.0" layoutY="10.0" text="TextAreas"> <styleClass> <String fx:value="h1" /> <String fx:value="heading" /> </styleClass> </Label>
+        <Separator layoutX="10.0" layoutY="47.0" prefWidth="200.0" />
+        <Label layoutX="10.0" layoutY="58.0" text="A TextArea is a TextInputControl component that allows a user to enter multiple lines of plain text." />
+        <Label layoutX="10.0" layoutY="114.0" text="TextArea Tags"> <styleClass> <String fx:value="display-2" /> <String fx:value="display" /> </styleClass> </Label>
+        <Separator layoutX="10.0" layoutY="158.0" prefWidth="200.0" />
+        <Label layoutX="10.0" layoutY="169.0">
+            <graphic>
+                <TextFlow>
+                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="There is no need to add the " />
+                    <Label styleClass="code" text=".text-area" />
+                    <Text layoutX="10.0" layoutY="10.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" tag as it is automatically added to a " />
+                    <Label layoutX="35.0" layoutY="11.0" styleClass="text-bold" text="TextArea" />
+                    <Text layoutX="81.0" layoutY="10.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" control." />
+                </TextFlow>
+            </graphic>
+        </Label>
+        <Label layoutX="10.0" layoutY="193.0" styleClass="display-3" text="Example" />
+        <TextArea prefHeight="100.0" promptText="Message"> <VBox.margin> <Insets top="10.0" /> </VBox.margin> </TextArea>
+        <Label layoutX="10.0" layoutY="114.0" text="JFoenix TextFields"> <styleClass> <String fx:value="display-2" /> <String fx:value="display" /> </styleClass> </Label>
+        <Separator layoutX="10.0" layoutY="158.0" prefWidth="200.0" />
+        <Label layoutX="10.0" layoutY="169.0">
+            <graphic>
+                <TextFlow>
+                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="There is no need to add the " />
+                    <Label styleClass="code" text=".jfx-text-area" />
+                    <Text layoutX="10.0" layoutY="10.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" tag as it is automatically added to a " />
+                    <Label layoutX="35.0" layoutY="11.0" styleClass="text-bold" text="JFXTextArea" />
+                    <Text layoutX="81.0" layoutY="10.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" control." />
+                </TextFlow>
+            </graphic>
+        </Label>
+        <Label layoutX="10.0" layoutY="193.0" styleClass="display-3" text="Example" />
+        <JFXTextArea prefRowCount="5" promptText="Message Body"> <VBox.margin> <Insets top="15.0" /> </VBox.margin> </JFXTextArea>
+        <VBox layoutX="10.0" layoutY="258.0" styleClass="blockquote">
+            <Label layoutX="25.0" layoutY="15.0" styleClass="blockquote-heading" text="Sizes" />
+            <Label layoutX="25.0" layoutY="43.0" text="Generally, TextAreas span to take the width of the parent node. For larger or smaller TextAreas, use the TextField additional classes for sizes provided by BootstrapFX." />
+            <Label text="Validation"> <styleClass> <String fx:value="blockquote-heading" /> <String fx:value="display" /> </styleClass> </Label>
+            <Label layoutX="30.0" layoutY="54.0" text="Generally, any validation on a TextArea input control would be to ensure a non empty input. The same procedure used for TextField validation of non-empty inputs applies here too." />
+        </VBox>
     </VBox>
 </ScrollPane>

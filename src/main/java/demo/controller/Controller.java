@@ -19,8 +19,8 @@ public class Controller extends BootstrapFX implements Initializable {
 
     @FXML private AnchorPane login_pane;
     @FXML private Label err_msg, forgot_pass;
-    @FXML private TextField usr_id;
-    @FXML private PasswordField usr_pass;
+    @FXML private TextField login_id;
+    @FXML private PasswordField login_pass;
     @FXML private JFXCheckBox keep_loggedin;
     @FXML private JFXButton btn_cancel, btn_login;
 
@@ -32,14 +32,14 @@ public class Controller extends BootstrapFX implements Initializable {
     @FXML private ScrollPane typos_view, bttns_view, forms_view, views_view;
 
     @Override public void initialize(URL location, ResourceBundle resources) {
-        login_pane.toFront();
+        typos_pane.toFront();
 
         keep_loggedin.setOnAction(event -> {
             //TODO: Add implementation here
         });
 
         btn_login.setOnAction(event -> {
-            if (isValid(usr_id, usr_pass)) {
+            if (isValid(login_id, login_pass)) {
                 //TODO: Add implementation here
                 main_pane.toFront();
             }

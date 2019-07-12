@@ -28,8 +28,8 @@
          </styleClass>
       </Label>
       <Label fx:id="err_msg" layoutX="391.0" layoutY="244.0" styleClass="text-bold" text="UserID/Password mismatch" visible="false" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="210.0" />
-      <TextField fx:id="usr_id" layoutX="350.0" layoutY="273.0" promptText="User ID" AnchorPane.topAnchor="250.0" />
-      <PasswordField fx:id="usr_pass" layoutX="350.0" layoutY="336.0" promptText="Password" AnchorPane.topAnchor="304.0" />
+      <TextField fx:id="login_id" layoutX="350.0" layoutY="273.0" promptText="User ID" AnchorPane.topAnchor="250.0" />
+      <PasswordField fx:id="login_pass" layoutX="350.0" layoutY="336.0" promptText="Password" AnchorPane.topAnchor="304.0" />
       <JFXCheckBox fx:id="keep_loggedin" layoutX="409.0" layoutY="378.0" styleClass="text-inverse" text="Keep me logged in" AnchorPane.topAnchor="358.0" />
       <JFXButton fx:id="btn_cancel" layoutX="350.0" layoutY="435.0" onAction="#windowControl" text="CANCEL" AnchorPane.topAnchor="398.0">
          <styleClass>

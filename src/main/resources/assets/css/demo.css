@@ -25,16 +25,16 @@
     -fx-text-fill: derive(-d, 35%);
 }
 
-#title, #err_msg, #usr_id, #usr_pass, #forgot_pass, #copyright_login {
+#title, #err_msg, #login_id, #login_pass, #forgot_pass, #copyright_login {
     -fx-alignment: CENTER;
     -fx-pref-width: 250;
 }
 
-#usr_id:focused, #usr_pass:focused {
+#login_id:focused, #login_pass:focused {
     -fx-background-color: derive(-t, 165%);
 }
 
-#usr_id:focused, #usr_pass:focused {
+#login_id:focused, #login_pass:focused {
     -fx-border-color: transparent;
 }
 

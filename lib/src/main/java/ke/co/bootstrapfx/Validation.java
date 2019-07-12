@@ -10,6 +10,7 @@ import java.util.regex.Pattern;
  * a matcher method attempts to match the entire input sequence against the pattern.
  *
  * @author  Wasula Benjamin
+ * @since   BootstrapFX 1.0
  */
 public class Validation {
 

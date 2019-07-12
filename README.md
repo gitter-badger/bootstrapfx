@@ -3,7 +3,7 @@
 </p>
 <h2 align="center"> BootstrapFX </h2>
 <p align="center">
-    <small> &mdash; Beta Version </small>
+    <small> &mdash; Version 1.0 Alpha </small>
     <br> <br>
     Get started with BootstrapFX, a front-end component library to help in the quick development of JavaFX user 
     interfaces with extensive pre-styled components.
@@ -85,7 +85,7 @@ bootstrapfx/
   │   │   └── *.ttf
   │   └─── img/
   │       └── *.png
-  └── bootsrapfx.jar
+  └── bootsrapfx-1.0.jar
 ```
 This is the most basic form of BootstrapFX for quick drop-in usage in nearly any JavaFX project. The package doesn't 
 include documentation, source files, or any optional dependencies (jfoenix).
