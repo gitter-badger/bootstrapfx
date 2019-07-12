@@ -135,7 +135,7 @@ repositories {
 Step 2. Add the dependency
 ```groovy
 dependencies {
-    implementation 'com.github.wasulabenjamin:bootstrapfx:master-SNAPSHOT' //BootstrapFX dependency
+    implementation 'com.github.wasulabenjamin.bootstrapfx:lib:-SNAPSHOT'
 }     
 ```
 
@@ -152,9 +152,9 @@ Step 1. Add the JitPack repository to your build file
 Step 2. Add the dependency
 ```xml
 <dependency>
-    <groupId>com.github.wasulabenjamin</groupId>
-    <artifactId>bootstrapfx</artifactId>
-    <version>master-SNAPSHOT</version>
+    <groupId>com.github.wasulabenjamin.bootstrapfx</groupId>
+    <artifactId>lib</artifactId>
+    <version>-SNAPSHOT</version>
 </dependency>
 ```
 
