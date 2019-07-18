@@ -1,4 +1,4 @@
-package ke.co.bootstrapfx;
+package com.github.wasulabenjamin.bootstrapfx;
 
 import javafx.animation.KeyFrame;
 import javafx.animation.Timeline;
@@ -40,8 +40,8 @@ public class BootstrapFX {
                     if (!validation.isPassword(((TextField) field).getText())) {
                         validate= false;
                         setInvalid(
-                            field, "Passwords must contain at least: one lowercase letter, one uppercase" +
-                            "letter, one digit, one special character and a length of 6 to 16 letters."
+                                field, "Passwords must contain at least: one lowercase letter, one uppercase" +
+                                        "letter, one digit, one special character and a length of 6 to 16 letters."
                         );
                     }
                 } else if (field.getStyleClass().contains("email")) {

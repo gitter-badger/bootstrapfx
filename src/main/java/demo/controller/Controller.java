@@ -1,5 +1,6 @@
 package demo.controller;
 
+import com.github.wasulabenjamin.bootstrapfx.BootstrapFX;
 import com.jfoenix.controls.JFXButton;
 import com.jfoenix.controls.JFXCheckBox;
 import javafx.event.ActionEvent;
@@ -9,7 +10,6 @@ import javafx.scene.Group;
 import javafx.scene.control.*;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
-import ke.co.bootstrapfx.BootstrapFX;
 
 import java.net.URL;
 import java.util.ResourceBundle;

@@ -85,7 +85,7 @@ bootstrapfx/
   │   │   └── *.ttf
   │   └─── img/
   │       └── *.png
-  └── bootsrapfx-1.0.jar
+  └── bootstrapfx-1.0-SNAPSHOT.jar
 ```
 This is the most basic form of BootstrapFX for quick drop-in usage in nearly any JavaFX project. The package doesn't 
 include documentation, source files, or any optional dependencies (jfoenix).
@@ -126,14 +126,14 @@ in Netbeans IDE.
 
 ### Gradle
 Step 1. Add the JitPack repository to your build file
-```groovy
+```gradle
 repositories {
     mavenCentral()
     maven { url 'https://jitpack.io' } //The JitPack repository
 }      
 ```
 Step 2. Add the dependency
-```groovy
+```gradle
 dependencies {
     implementation 'com.github.wasulabenjamin.bootstrapfx:lib:-SNAPSHOT'
 }     
@@ -188,11 +188,11 @@ look like this:
 ```java
 package demo.controller;
 
+import com.github.wasulabenjamin.bootstrapfx.BootstrapFX;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Label;
-import ke.co.bootstrapfx.BootstrapFX;
 
 import java.net.URL;
 import java.util.ResourceBundle;

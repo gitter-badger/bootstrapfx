@@ -82,8 +82,7 @@ any other requirements (such as test coverage).
 branch.
 
 Similarly, when contributing to BootstrapFX's documentation, you should edit the documentation source files. **Do not 
-edit the `GeneralUI.fxml` file in the master branch directly.** That branch is managed separately by the BootstrapFX 
-Core Team.
+edit the `view package` in the master branch directly.** That branch is managed separately by the BootstrapFX Core Team.
 
 Adhering to the following process is the best way to get your work included in the project:
 1. [Fork](https://help.github.com/articles/fork-a-repo/) the project, clone your fork, and configure the remotes:
@@ -115,7 +114,7 @@ them public.
 5. Locally merge (or rebase) the upstream development branch into your topic branch:
 
    ```bash
-   git pull [--rebase] upstream master
+   git pull --rebase upstream master
    ```
 6. Push your topic branch up to your fork:
 

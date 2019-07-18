@@ -1,4 +1,4 @@
-package ke.co.bootstrapfx;
+package com.github.wasulabenjamin.bootstrapfx;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
