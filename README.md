@@ -85,7 +85,7 @@ bootstrapfx/
   │   │   └── *.ttf
   │   └─── img/
   │       └── *.png
-  └── bootstrapfx-1.0-SNAPSHOT.jar
+  └── bootstrapfx.jar
 ```
 This is the most basic form of BootstrapFX for quick drop-in usage in nearly any JavaFX project. The package doesn't 
 include documentation, source files, or any optional dependencies (jfoenix).
