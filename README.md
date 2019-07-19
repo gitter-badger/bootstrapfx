@@ -13,6 +13,9 @@
 </p>
 
 # Table of Contents
+
+[![Join the chat at https://gitter.im/bootstrapfx/community](https://badges.gitter.im/bootstrapfx/community.svg)](https://gitter.im/bootstrapfx/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 - [Introduction](#bootstrapFX)
 - [Documentation](#documentation)
 - [Getting Started](#getting-started)
